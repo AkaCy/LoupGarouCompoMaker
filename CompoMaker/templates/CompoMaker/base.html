@@ -1,0 +1,22 @@
+{% load static %}
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+    <title>{% block title %}Compo Maker LG IRT{% endblock title %}</title>
+  {% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> {% endcomment %}
+  <link rel="stylesheet" href="{% static 'core/base.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Asap-Regular.woff' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Nunito-Bold.ttf' %}">
+  {% block extra_css %} {% endblock extra_css %}
+  {% block extra_js %} {% endblock extra_js %}
+</head>
+<body class="body">
+    {% block header%}{% endblock header%}
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+    {% block footer%}{% endblock footer%}
+</body>
+</html>
