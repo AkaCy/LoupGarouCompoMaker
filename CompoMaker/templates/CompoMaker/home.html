@@ -1,0 +1,21 @@
+{% extends 'CompoMaker/base.html' %}
+{% load static %}
+{% block extra_css %} <link rel="stylesheet" href="{% static 'CompoMaker/homeStyle.css' %}"> {% endblock extra_css %}
+
+{% block content %}
+<div class = "ouais">
+    <h1>Welcome to the HOME page</h1>
+    <div class = "compo">
+        {% comment %} la list de la compo en colonne avec le nombre de chaque 
+        role et la puissance de chaque camp (avantage a qui)
+        possibilité d'enlever un item en cliquant dessus (si y'en a qu'un seul
+        il disparait) {% endcomment %}
+    </div>
+    <div class = "list_role">
+        {% comment %} recherche ou liste de tout tu cliques dessus ca te 
+        lajoute a la compo
+        puissance visible {% endcomment %}
+    </div>
+</div>
+
+{% endblock content %}

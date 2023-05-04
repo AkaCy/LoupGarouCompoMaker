@@ -11,3 +11,6 @@ class Role(models.Model):
 
     def __str__(self):
         return self.nomber + " " + self.name + ", puissance " + self.power
+
+
+# class Compo(models.Model):
